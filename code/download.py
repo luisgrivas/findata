@@ -9,7 +9,7 @@ nyse_tickers = nyse_tickers.loc[nyse_tickers.MarketCap != 0, ]
 nasdaq_tickers = pd.read_csv('data/companylist_nasdaq.csv', encoding='latin1')
 nasdaq_tickers = nasdaq_tickers.loc[nasdaq_tickers.MarketCap != 0, ]
 
-list1= nyse_tickers['Symbol'].str.strip().tolist()
+list1 = nyse_tickers['Symbol'].str.strip().tolist()
 list2 = nasdaq_tickers['Symbol'].str.strip().tolist()
 
 tickers = list1 + list2
